@@ -51,12 +51,37 @@
         <h3>Certification Programs</h3>
         <span class="cap-note">Real experience on real equipment</span>
       </div>
-      <div class="tile-grid">
-        <div class="tile"><h4>Thin Films</h4><p>Deposition fundamentals, film growth, and characterization — hands-on with real equipment</p></div>
-        <div class="tile"><h4>Semiconductors</h4><p>Materials, devices, and processes powering the modern semiconductor industry</p></div>
-        <div class="tile"><h4>Vacuum Systems</h4><p>Design, operation, and maintenance of vacuum technology — a rare and in-demand skill set</p></div>
-        <div class="tile"><h4>Hazardous Materials &amp; Waste</h4><p>Safe handling, storage, and disposal practices for industrial environments</p></div>
-        <div class="tile"><h4>Industrial Safety</h4><p>Workplace safety fundamentals for advanced manufacturing settings</p></div>
+      <div class="tile-grid grid-3">
+        <div class="tile">
+          <h4>Thin Films</h4>
+          <p>Deposition fundamentals, film growth, and characterization — hands-on with real equipment</p>
+          <button class="learn-more" type="button" data-open="modThinFilms">Learn more…</button>
+        </div>
+        <div class="tile">
+          <h4>Semiconductors</h4>
+          <p>Materials, devices, and processes powering the modern semiconductor industry</p>
+          <button class="learn-more" type="button" data-open="modSemiconductors">Learn more…</button>
+        </div>
+        <div class="tile">
+          <h4>Vacuum Systems</h4>
+          <p>Design, operation, and maintenance of vacuum technology — a rare and in-demand skill set</p>
+          <button class="learn-more" type="button" data-open="modVacuum">Learn more…</button>
+        </div>
+        <div class="tile">
+          <h4>Hazardous Materials &amp; Waste</h4>
+          <p>Safe handling, storage, and disposal practices for industrial environments</p>
+          <button class="learn-more" type="button" data-open="modHazmat">Learn more…</button>
+        </div>
+        <div class="tile">
+          <h4>Industrial Safety (OSHA)</h4>
+          <p>Workplace safety fundamentals for advanced manufacturing settings, aligned with OSHA outreach training</p>
+          <button class="learn-more" type="button" data-open="modSafety">Learn more…</button>
+        </div>
+        <div class="tile">
+          <h4>Human Centered Design</h4>
+          <p>Design thinking and user-focused problem solving for equipment, processes, and products</p>
+          <button class="learn-more" type="button" data-open="modHCD">Learn more…</button>
+        </div>
       </div>
 
       <div class="train-banner">
@@ -84,9 +109,143 @@
   </div>
 </section>
 
+<div class="modal-overlay" id="modThinFilms" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modThinFilmsTitle">
+    <button class="modal-close" type="button" aria-label="Close">&times;</button>
+    <h3 id="modThinFilmsTitle">Thin Films Certification</h3>
+    <span class="duration">6 weeks · ~48 hours · lecture + hands-on lab</span>
+    <p>A hands-on introduction to how thin films are made, measured, and used. Trainees run real deposition equipment, build multilayer film stacks, and learn to read what a film is telling them — the core skill set of the coating and semiconductor industries.</p>
+    <h4 class="topics-head">Topics covered</h4>
+    <ul class="topics">
+      <li>Thin-film fundamentals — nucleation, growth modes, and microstructure</li>
+      <li>Sputter deposition — DC and RF magnetron sources, targets, and plasmas</li>
+      <li>Thermal evaporation — sources, boats, and metallization practice</li>
+      <li>Process parameters — pressure, power, temperature, and gas flow, and how each shapes the film</li>
+      <li>Substrate preparation, cleaning, and adhesion</li>
+      <li>Film thickness and uniformity metrology</li>
+      <li>Film stress, defects, and common failure modes</li>
+      <li>Post-deposition treatments — annealing and crystallization</li>
+      <li>Characterization basics — microscopy, profilometry, and optical inspection</li>
+      <li>Capstone lab — design, deposit, and qualify a multilayer film stack</li>
+    </ul>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modSemiconductors" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modSemiconductorsTitle">
+    <button class="modal-close" type="button" aria-label="Close">&times;</button>
+    <h3 id="modSemiconductorsTitle">Semiconductors Certification</h3>
+    <span class="duration">8 weeks · ~64 hours · lecture + hands-on lab</span>
+    <p>The materials, devices, and manufacturing processes behind the modern semiconductor industry — taught for technicians and career-changers, not theorists. Trainees leave able to speak the language of a fab and handle wafers and processes with confidence.</p>
+    <h4 class="topics-head">Topics covered</h4>
+    <ul class="topics">
+      <li>Semiconductor materials — silicon, compound semiconductors, and why band gaps matter</li>
+      <li>Doping, junctions, and how devices switch</li>
+      <li>Device overview — diodes, transistors, sensors, and photovoltaics</li>
+      <li>Wafer handling, contamination control, and cleanroom protocol</li>
+      <li>The process flow — deposition, lithography and patterning, etch, and thermal steps</li>
+      <li>Thin-film deposition for devices — hands-on on STARC equipment</li>
+      <li>Electrical testing — I–V and C–V measurement, four-point probe</li>
+      <li>Metrology, defects, and yield — finding and fixing what went wrong</li>
+      <li>The semiconductor industry landscape — roles, supply chain, and career paths</li>
+      <li>Capstone — build and electrically qualify a simple device structure</li>
+    </ul>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modVacuum" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modVacuumTitle">
+    <button class="modal-close" type="button" aria-label="Close">&times;</button>
+    <h3 id="modVacuumTitle">Vacuum Systems Certification</h3>
+    <span class="duration">6 weeks · ~48 hours · lecture + hands-on lab</span>
+    <p>Vacuum technology underpins every deposition tool, and people who can design, operate, and troubleshoot vacuum systems are rare and in demand. This program covers the full stack — from gas physics to leak hunting on real hardware.</p>
+    <h4 class="topics-head">Topics covered</h4>
+    <ul class="topics">
+      <li>Vacuum fundamentals — pressure ranges, gas laws, and mean free path</li>
+      <li>Roughing pumps — rotary vane, scroll, and dry pumps</li>
+      <li>High-vacuum pumps — turbomolecular, diffusion, and cryo pumps</li>
+      <li>Pressure measurement — Pirani, capacitance manometer, and ion gauges</li>
+      <li>Hardware — flanges and seals (KF, ISO, CF), valves, and feedthroughs</li>
+      <li>System design — conductance, pump sizing, and pump-down behavior</li>
+      <li>Leak detection — helium mass-spectrometer leak hunting on real systems</li>
+      <li>Residual gas analysis and contamination diagnosis</li>
+      <li>Preventive maintenance, rebuild practice, and troubleshooting</li>
+      <li>Capstone — bring a vacuum system from atmosphere to base pressure and certify it leak-tight</li>
+    </ul>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modHazmat" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modHazmatTitle">
+    <button class="modal-close" type="button" aria-label="Close">&times;</button>
+    <h3 id="modHazmatTitle">Hazardous Materials &amp; Waste Certification</h3>
+    <span class="duration">2 weeks · ~16 hours · lecture + practical exercises</span>
+    <p>Safe handling, storage, and disposal of the chemicals and materials found in industrial and research settings. Practical, regulation-aware training that employers can rely on from day one.</p>
+    <h4 class="topics-head">Topics covered</h4>
+    <ul class="topics">
+      <li>Hazard communication — GHS labeling and reading Safety Data Sheets</li>
+      <li>Chemical storage, segregation, and compatibility</li>
+      <li>Personal protective equipment — selection, use, and limitations</li>
+      <li>Compressed gases and cryogens — cylinders, regulators, and safe handling</li>
+      <li>Heavy metals and toxic materials handling</li>
+      <li>Waste streams — identification, labeling, accumulation, and manifests (RCRA basics)</li>
+      <li>Spill prevention and response</li>
+      <li>Exposure monitoring and hygiene practices</li>
+      <li>Emergency procedures and incident reporting</li>
+    </ul>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modSafety" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modSafetyTitle">
+    <button class="modal-close" type="button" aria-label="Close">&times;</button>
+    <h3 id="modSafetyTitle">Industrial Safety (OSHA) Certification</h3>
+    <span class="duration">2 weeks · ~20 hours · aligned with OSHA outreach training</span>
+    <p>Workplace safety fundamentals for advanced manufacturing environments, aligned with OSHA general-industry outreach training. Graduates understand both their rights and the practices that keep a shop floor running without incident.</p>
+    <h4 class="topics-head">Topics covered</h4>
+    <ul class="topics">
+      <li>The OSHA framework — standards, inspections, and worker rights</li>
+      <li>Hazard identification and job-safety analysis</li>
+      <li>Hazard communication and chemical safety</li>
+      <li>Lockout/tagout — controlling hazardous energy</li>
+      <li>Electrical safety in industrial settings</li>
+      <li>Machine guarding and hand/power tool safety</li>
+      <li>Walking and working surfaces, ladders, and material handling</li>
+      <li>Fire prevention, egress, and emergency action plans</li>
+      <li>PPE and ergonomics</li>
+      <li>Incident investigation, recordkeeping, and reporting</li>
+    </ul>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modHCD" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modHCDTitle">
+    <button class="modal-close" type="button" aria-label="Close">&times;</button>
+    <h3 id="modHCDTitle">Human Centered Design Certification</h3>
+    <span class="duration">4 weeks · ~32 hours · workshop format with team project</span>
+    <p>A workshop-style program in design thinking: how to understand the people who will use a product, process, or piece of equipment, and design for them from the start. Valuable for technicians, engineers, and entrepreneurs alike.</p>
+    <h4 class="topics-head">Topics covered</h4>
+    <ul class="topics">
+      <li>The human-centered design process — empathize, define, ideate, prototype, test</li>
+      <li>User research — interviews, observation, and journey mapping</li>
+      <li>Defining the real problem — needs statements and requirements</li>
+      <li>Ideation techniques and concept selection</li>
+      <li>Rapid prototyping — from sketches to functional mockups</li>
+      <li>Usability evaluation and design iteration</li>
+      <li>Designing for safety, accessibility, and error prevention in equipment and processes</li>
+      <li>Communicating design decisions to stakeholders</li>
+      <li>Capstone — a team design project taken from user research to tested prototype</li>
+    </ul>
+  </div>
+</div>
+
 </main>
 
 <footer>
+  <div class="wrap flag-line">
+    <svg class="us-flag" viewBox="0 0 38 20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="United States flag"><rect width="38" height="20" fill="#fff"/><rect y="0.00" width="38" height="1.54" fill="#B22234"/><rect y="3.08" width="38" height="1.54" fill="#B22234"/><rect y="6.15" width="38" height="1.54" fill="#B22234"/><rect y="9.23" width="38" height="1.54" fill="#B22234"/><rect y="12.31" width="38" height="1.54" fill="#B22234"/><rect y="15.38" width="38" height="1.54" fill="#B22234"/><rect y="18.46" width="38" height="1.54" fill="#B22234"/><rect width="15.2" height="10.77" fill="#3C3B6E"/><g fill="#fff"><circle cx="1.27" cy="0.60" r=".5"/><circle cx="3.80" cy="0.60" r=".5"/><circle cx="6.33" cy="0.60" r=".5"/><circle cx="8.87" cy="0.60" r=".5"/><circle cx="11.40" cy="0.60" r=".5"/><circle cx="13.93" cy="0.60" r=".5"/><circle cx="2.53" cy="1.80" r=".5"/><circle cx="5.07" cy="1.80" r=".5"/><circle cx="7.60" cy="1.80" r=".5"/><circle cx="10.13" cy="1.80" r=".5"/><circle cx="12.67" cy="1.80" r=".5"/><circle cx="1.27" cy="2.99" r=".5"/><circle cx="3.80" cy="2.99" r=".5"/><circle cx="6.33" cy="2.99" r=".5"/><circle cx="8.87" cy="2.99" r=".5"/><circle cx="11.40" cy="2.99" r=".5"/><circle cx="13.93" cy="2.99" r=".5"/><circle cx="2.53" cy="4.19" r=".5"/><circle cx="5.07" cy="4.19" r=".5"/><circle cx="7.60" cy="4.19" r=".5"/><circle cx="10.13" cy="4.19" r=".5"/><circle cx="12.67" cy="4.19" r=".5"/><circle cx="1.27" cy="5.38" r=".5"/><circle cx="3.80" cy="5.38" r=".5"/><circle cx="6.33" cy="5.38" r=".5"/><circle cx="8.87" cy="5.38" r=".5"/><circle cx="11.40" cy="5.38" r=".5"/><circle cx="13.93" cy="5.38" r=".5"/><circle cx="2.53" cy="6.58" r=".5"/><circle cx="5.07" cy="6.58" r=".5"/><circle cx="7.60" cy="6.58" r=".5"/><circle cx="10.13" cy="6.58" r=".5"/><circle cx="12.67" cy="6.58" r=".5"/><circle cx="1.27" cy="7.78" r=".5"/><circle cx="3.80" cy="7.78" r=".5"/><circle cx="6.33" cy="7.78" r=".5"/><circle cx="8.87" cy="7.78" r=".5"/><circle cx="11.40" cy="7.78" r=".5"/><circle cx="13.93" cy="7.78" r=".5"/><circle cx="2.53" cy="8.97" r=".5"/><circle cx="5.07" cy="8.97" r=".5"/><circle cx="7.60" cy="8.97" r=".5"/><circle cx="10.13" cy="8.97" r=".5"/><circle cx="12.67" cy="8.97" r=".5"/><circle cx="1.27" cy="10.17" r=".5"/><circle cx="3.80" cy="10.17" r=".5"/><circle cx="6.33" cy="10.17" r=".5"/><circle cx="8.87" cy="10.17" r=".5"/><circle cx="11.40" cy="10.17" r=".5"/><circle cx="13.93" cy="10.17" r=".5"/></g></svg>
+    <span>Empowering US Manufacturing</span>
+  </div>
   <div class="wrap foot">
     <div>
       <img class="foot-logo" src="logo-full.png" alt="STARC">
